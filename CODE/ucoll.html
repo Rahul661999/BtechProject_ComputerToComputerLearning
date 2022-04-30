@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>register</title>
+</head>
+<style>
+body {
+	border-style: solid;
+	border-width: 5px;
+	border-color: lightblue;
+	margin: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	height: 400px;
+	align-items: center;
+	padding: 50px;
+	text-align: center;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+a:active {
+	color: #4CAF50;
+}
+</style>
+
+<body>
+	<form action="form1.html">
+		<div>
+			<font face="Trebuchet MS" size="6" color="#0CBEAC">Update
+				College</font></b>
+		</div>
+		<br> <input type="text" placeholder="User Name" name="uid" required
+			minlength="5" maxlength="15"><br>
+		<br> <input type="text" placeholder="User Name" name="uid" required
+			minlength="5" maxlength="15"><br>
+		<br> <input type="Password" placeholder="Password" name="pwd" required
+			minlength="8" maxlength="20"><br>
+		<br> <input type="email" placeholder="college email" required
+			minlength="10" maxlength="40" name="email"><br>	
+		<br> <input type="text" placeholder="College Postal Address"
+			required minlength="8" maxlength="30" name="addr"><br>
+		<br> <input type="text" Placeholder="College Phone Number" name="phn"
+			required pattern="[6-9]{1}[0-9]{9}"><br>
+		<br>
+		<pre>
+			<input type="submit" value="Update" name="submit" tabindex="5">     <input
+				type="reset" value="Reset" name="reset">
+		</pre>
+
+	</form>
+</body>
+</html>

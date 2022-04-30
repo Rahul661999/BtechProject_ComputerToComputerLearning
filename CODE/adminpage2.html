@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 290px;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+li a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+li a:hover:not (.active ) {
+	background-color: #555;
+	color: white;
+}
+</style>
+
+<SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
+
+</head>
+<body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();" onunload="">
+
+	<ul>
+		<li><a href="approvecollege.jsp" target="frame3">Approve
+				Institute</a></li>
+		<li><a href="deleteinstitutes.jsp" target="frame3">Delete
+				Institute</a></li>
+		<li><a href="viewstudents.jsp" target="frame3">View Students</a></li>
+		<li><a href="viewcolleges.jsp" target="frame3">View Colleges</a></li>
+		<li><a href="viewcollegefeedback.jsp" target="frame3">View college Feedback </a></li>
+		<li><a href="viewstudentfeedback.jsp" target="frame3">View student Feedback </a></li>
+		<!-- <li><a href="#Send Response" target="frame3">Send Response </a></li>  -->
+	</ul>
+
+</body>
+</html>

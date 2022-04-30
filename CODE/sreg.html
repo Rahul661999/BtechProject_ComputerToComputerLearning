@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>register</title>
+</head>
+<style>
+body {
+	border-style: solid;
+	border-width: 5px;
+	border-color: lightblue;
+	margin: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	width: 520px;
+	height: 660px;
+	align-items: center;
+	padding: 40px;
+	text-align: center;
+}
+
+.button{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+input[type=text] {
+	width:110%;
+	padding: 8px 10px;
+	margin: 3px 0;
+	box-sizing: border-box;
+}
+
+input[type=email] {
+	width: 110%;
+	padding: 8px 10px;
+	margin: 3px 0;
+	box-sizing: border-box;
+}
+
+input[type=password] {
+	width: 110%;
+	padding: 8px 10px;
+	margin: 3px 0;
+	box-sizing: border-box;
+}
+
+a:active {
+	color: #4CAF50;
+}
+
+input[type=submit] {
+	padding: 5px 20px;
+	margin: 4px 4px;
+	box-sizing: border-box;
+	font-text:center;
+	}
+
+input[type=reset] {
+	padding: 5px 20px;
+	margin: 4px 4px;
+	box-sizing: border-box;
+	}
+
+</style>
+
+<body>
+
+<div style="position: absolute; width: 57px; height: 26px; z-index: 4; left: 10px; top: 4px" id="layer8">
+					<input type=button onClick="location.href='studentlogin.html'"
+ value='Back'>
+					<font face="Verdana" size="4" color="#000000"></font></b></a></div>    
+
+<div style="position: absolute; width: 57px; height: 26px; z-index: 4; left: 1250px; top: 4px" id="layer8">
+					<input type=button onClick="location.href='Responsive_homepage.html'"
+ value='Home'>
+					<font face="Verdana" size="4" color="#000000"></font></b></a></div>    
+
+	<form action="studaction.jsp">
+		<div style="position: absolute; width: 340px; height: 100px; z-index: 3; left: 300px; top: 55px" id="layer1">
+			<pre>
+				<font face="Trebuchet MS" size="6" color="#0CBEAC">  Student Registration</font></b>
+			</pre>
+		</div>
+		<input type="text" placeholder="studentid" name="studentid" pattern="[0-9]+" title="should only be numbers" required
+			minlength="10" maxlength="25" ><br><br>
+		<input type="text" placeholder="FirstName" name="firstname" required
+			minlength="5" maxlength="25" pattern="[a-zA-Z]{2,64}"><br>
+		<br> <input type="text" placeholder="LastName" name="lastname"
+			required minlength="5" maxlength="25" pattern="[a-zA-Z]{2,64}"><br>
+		<br> <input type="text" placeholder="UserName" name="username" pattern="[A-Za-z]+" title="should only be alphabets" 
+			required maxlength="50" minlength="5"><br>
+		<br> <input type="Password" placeholder="Password"
+			name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain atleast one number,one uppercase,lowercase and atleast 8 characters "required minlength="8" maxlength="15"><br>
+		<br> <input type="text" placeholder="Mobile" name="mobile"
+			required pattern="[6-9]{1}[0-9]{9}"><br>
+		<br> <input type="email" placeholder="Email" name="email"
+			required><br>
+		<br> <input type="text" placeholder="Address" name="address" pattern="[A-Za-z]+" title="should only be alphabets" 
+			required minlength="10" maxlength="50"><br>
+		<br> <input type="text" placeholder="College" name="college" pattern="[A-Za-z]+" title="should only be alphabets" 
+			required minlength="3" maxlength="50"><br>
+		<br>
+		<pre>     <input type="submit" value="Submit" name="submit" tabindex="5">            <input
+				type="reset" value="Reset" name="reset">
+		</pre>
+
+	</form>
+</body>
+</html>

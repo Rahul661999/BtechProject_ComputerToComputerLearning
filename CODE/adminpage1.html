@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>webpage</title>
+<SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
+<style>
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+</style>
+</head>
+<frameset rows="10%,90%">
+	<frame src="adminpage.html" name="frame1" noresize="noresize"></frame>
+	<frameset cols="15,85">
+		<frame src="adminpage2.html" name="frame2" noresize="noresize"></frame>
+		<frame src=" " name="frame3" noresize="noresize"></frame>
+	</frameset>
+</frameset>
+<body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();" onunload="">
+</html>

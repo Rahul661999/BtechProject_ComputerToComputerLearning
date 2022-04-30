@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>register</title>
+</head>
+<style>
+body {
+	border-style: solid;
+	border-width: 5px;
+	border-color: lightblue;
+	margin: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	height: 400px;
+	align-items: center;
+	padding: 50px;
+	text-align: center;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+a:active {
+	color: #4CAF50;
+}
+</style>
+
+<body>
+	<form method="post" action="uploadFile.jsp"
+		enctype="multipart/form-data">
+		<div>
+			<font face="Trebuchet MS" size="6" color="#0CBEAC">Upload File</font></b>
+		</div>
+		<font face="Verdana" color="#E4DB6B" size="4"><b>Select a
+				file to upload :</b></font>
+		<pre>   <input type="file" name="uploadfile" size="50">
+		</pre>
+		<pre>
+			<input type="submit" name="Submit" value="Upload">     <input
+				type="reset" name="Reset" value="Cancel">
+		</pre>
+
+	</form>
+</body>
+</html>

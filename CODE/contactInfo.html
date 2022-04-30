@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel=stylesheet href="Responsive_style.css">
+
+<title>Computer to Computer Learning System</title>
+
+<SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
+
+</head>
+
+<body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();" onunload="">
+	
+	<nav class="navbar background h-nav-resp">
+		<ul class="nav-list v-class-resp">
+			<div class="logo">
+				<img src="Image/online_education-1.jpg" alt="logo">
+			</div>
+			<li><a href="#home"> Home</a></li>
+			<!--li><a href="#login"> Login</a> </li-->
+			<!-- <input type="button" value="Login"> -->
+			<!-- <li><a href="threelogin.1.html">Login</a></li>  -->
+			<li><label for="Login"><a href="#Login">Login</a></label>
+			<select id="login" name="login" onchange="window.location.href=this.value;"><!-- onchange="location = this.value;" -->
+  				<option value=""></option> 
+  				<option value="adminlogin.html">Admin</option>
+  				<option value="collegelogin.html">college</option>
+  				<option value="studentlogin.html">Student</option>
+			</select></li>
+			<li><a href="#about"> About</a></li>
+			<li><a href="#contact"> Contact Us</a></li>
+		</ul>
+		<div class="rightNav v-class-resp">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+
+		<div class="burger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</nav>
+
+	<section class="background firstSection" id="home">
+		<div class="box-main">
+			<div class="firstHalf">
+				<p class="text-big">The Future of Education is here</p>
+				<p class="text-small">Computer to computer learning system is
+					the modern way of education. It is more successful than traditional
+					forms of learning because it offers more variety of instructional
+					methods such as text, videos, audio and graphics, which can be
+					tailored according to the needs of the learner.</p>
+				<!-- <div class="button">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch Videos</button>
+                    
+                </div> -->
+			</div>
+			<div class="secondHalf">
+				<img src="Image/Conceptual-laptop-2.jpg" alt="Education Image">
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<section class="section" id="about">
+		<div class="paras">
+			<p class="sectionTag text-big">The end of your search is here</p>
+			<p class="sectionSubTag text-small">In this project we are mainly
+				focus on three modules such as Admin, College and Student in which
+				admin handle the whole scenarios like admin can give access to
+				college and student and can also delete them if he feels that they
+				are unauthorized members of this system. College which can handle
+
+				student and faculty details and also update their profile, students
+				have any query related to study materials so they can request to
+				college to provide specific materials with proper documentation.
+				Generally, an existing system the educational institutions provide
+				online material which is one-way uploading and hence the database is
+				limited to a single person and hence the information updating needs
+				time, But in this project, the database was made online so the
+				database was accessible to multiple users. This system provides
+				student to easily navigate through the application for more
+
+				information in a most secure manner and easy access to their
+				particular account so that student can access their study materials
+				as per their convenience.</p>
+		</div>
+		<div class="thumbnail">
+			<img src="Image/online-education-with-laptop-1.jpg"
+				alt="Online Learning" class="imgFluid">
+
+		</div>
+	</section>
+
+
+
+	<section class="section section-left">
+		<div class="paras">
+			<p class="sectionTag text-big">Online Learning</p>
+			<p class="sectionSubTag text-small">Online learning is a term
+				used to describe distance or correspondence courses that are offered
+				over the Internet. The courses offered through online learning cover
+				a wide range of subjects, audiences, and prices. This educational
+				method is growing in popularity as a cost-effective method of
+				providing access to education for a large population.</p>
+			<p class="sectionSubTag text-small">There are five main reasons
+				behind the growth in online learning: access, efficiency, stability,
+				cost, and technology. The explosion in online learning tools and the
+				adoption of this method by both post-secondary educational
+				institutions and high schools around the world speaks to the
+				fundamental desire for more education. The expanded access to
+				knowledge and information provides the groundwork necessary for many
+				people to start new careers and gain new skills.</p>
+		</div>
+		<div class="thumbnailok">
+			<img src="Image/e-learning-training-1.jpg" alt="Education Learning"
+				class="imgFluid">
+			<!--img src="Image/online-education-with-laptop-1.jpg" alt="Online Learning" class="imgFluid"-->
+
+
+		</div>
+	</section>
+
+
+
+	<section class="section">
+		<div class="paras">
+			<p class="sectionTag text-big">Transforming Education</p>
+			<p class="sectionSubTag text-small">In this project we used
+				multiple access databases like three modules admin, college and
+				student can perform the operations as per their requirements and it
+				is automatically updated with the multiple users on the system so
+				this makes the system fast and it provides easy navigation for all
+				the users like different institutes can upload articles and manage
+				the records of particular faculty and student and college has
+				facilities to send response to appropriate requests so it makes it
+				makes the environment with two way communication as student has any
+				problem regarding unable to understand and confused in any topic for
+				learning so they can directly contact to specific college to solve
+				that problem as soon as possible and able to ask admin as well. This
+				project provides student and college to easily navigate through the
+				application for any information in a most secure manner.</p>
+		</div>
+		<div class="thumbnail">
+			<!--img src="Image/online-virtual-classroom.png" alt="Online Learning" class="imgFluid"-->
+			<img src="Image/online-education-with-laptop-1.jpg"
+				alt="Online Learning" class="imgFluid">
+
+
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+        <br><br><br><br><br>
+        <h1 class="text-center">Contact Us</h1>
+        <form action="contactAction.jsp" method="post">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Elaborate your concern"></textarea>
+            <input type="submit" value="submit">
+        </form>
+	
+    </section>
+
+    <footer class="background">
+        <p class="text-footer"> 
+            Copyright &copy; 2021 Computer to Computer Learning System - All rights reserved
+        </p>
+       
+    </footer>
+    <script src="js/Responsive.js"></script>
+    <jsp:include page="Responsive_homepage.html"></jsp:include>
+
+</body>
+</html>

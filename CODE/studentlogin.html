@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login page</title>
+<style>
+body {
+	border-style: solid;
+	border-width: 5px;
+	border-color: lightblue;
+	margin: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	height: 400px;
+	align-items: center;
+	padding: 50px;
+	text-align: center;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input[type=button] {
+	margin: 1px 10px;
+	box-sizing: border-box;
+	float: center;
+	padding: 5px 20px;
+}
+
+a:active {
+	color: #4CAF50;
+}
+
+input[type=reset] {
+	margin: 1px 10px;
+	box-sizing: border-box;
+	float: center;
+	padding: 5px 20px;
+}
+
+input[type=submit] {
+	margin: 1px 10px;
+	box-sizing: border-box;
+	float: center;
+	padding: 5px 20px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: right;
+	padding: 1px 16px;
+	text-decoration: none;
+}
+</style>
+
+<!-- <script type="text/javascript">
+var login_attempts=3;
+function validate()
+{
+ var name=document.getElementById("user").value;
+ var pass=document.getElementById("passd").value;
+//var user1=Abhishek@094 and var pass1=Abhishek@094Shahi we have to access the table and we have to validate using var user1=document.getElementById("mytable").rows////[0].cells.length;
+ if(name=="Abhishek@094" && pass=="Abhishek@094Shahi")
+ {
+  alert("SuccessFully Logged In");
+  document.getElementById("user").value="";
+  document.getElementById("passd").value="";
+  return true;
+ }
+ else
+ {
+  if(login_attempts==0)
+  {
+   alert("No Login Attempts Available");
+   /*document.getElementById("user").disabled=true;
+    document.getElementById("passd").disabled=true;
+    document.getElementById("myform").disabled=true;
+    return false;*/
+  }
+  else
+  {
+   login_attempts=login_attempts-1;
+   alert("Login Failed Now Only "+login_attempts+" Login Attempts Available");
+	//return false;
+   if(login_attempts==0)
+   {
+    document.getElementById("user").disabled=true;
+    document.getElementById("passd").disabled=true;
+    document.getElementById("myform").disabled=true;
+    //return false;
+   }
+  }
+ }
+ 
+ return false;
+}	
+</script>  -->
+</head>
+<body>
+<div style="position: absolute; width: 57px; height: 26px; z-index: 4; left: 1250px; top: 4px" id="layer8">
+					<input type=button onClick="location.href='Responsive_homepage.html'"
+ value='Home'>
+					<font face="Verdana" size="4" color="#000000"></font></b></a></div>    
+        
+	<form id="myform" method="post" onsubmit="return validate();"
+		action="studentvalid.jsp">
+		<div>
+			<font face="Trebuchet MS" size="6" color="#0CBEAC">Student
+				Login</font></b>
+		</div>
+		<input type="text" placeholder="username" id="user" name="uid"
+			required><br>
+		<br> <input type="password" placeholder="password" id="passd"
+			name="pwd" required><br>
+		<br>
+		<ul>
+			<li><input type="submit" value="Sign In">
+			<li><input type="reset" value="Reset"></li>
+		</ul>
+		<br> <a href="adminrequest.html">forget password?</a>
+		<pre><font face="Trebuchet MS" size="4" color="#0CBEAC" text-align:center>or</font></b>
+		</pre>
+		<a style="text-decoration: none" href="sreg.html"><input
+			type="button" value="Sign Up" name="SignUp" tabindex="5">
+	</form>
+</body>
+</html>
